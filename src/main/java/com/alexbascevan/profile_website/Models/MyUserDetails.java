@@ -20,8 +20,8 @@ public class MyUserDetails implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "user_sequence")
-    @SequenceGenerator(name = "user_sequence", initialValue = 4, allocationSize = 1)
-    int id;
+    @SequenceGenerator(name = "user_sequence", initialValue = 3, allocationSize = 1)
+    private int id;
     private String username;
     private String password;
     private String roles;
