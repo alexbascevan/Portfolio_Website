@@ -7,24 +7,49 @@ section {
     align-items: center;
     scroll-snap-align: start; /* Snap each section to the start */
     color: #fff; /* White text color for sections */
-    padding: 2rem;
+    padding: 3rem;
 }
 
 /* Introduction section */
+.name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 6rem;
+    margin: 0; /* Remove default margin */
+    margin-bottom: 1rem; /* Space below name */
+}
+
+.title {
+    font-size: 3rem;
+    color: #6f7788;
+    margin: 0; /* Remove default margin */
+    margin-bottom: 1rem; /* Space below title */
+}
+
+.summary {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    line-height: 1.5; /* Improve readability */
+    max-width: 100%; /* Ensure it doesn’t exceed container width */
+}
+
+/* Introduction container */
 .intro {
-    background-color: #7A1CAC; /* Dark purple background */
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
     padding: 2rem; /* Dynamic padding */
     box-sizing: border-box; /* Ensure padding is included in width */
+    text-align: center; /* Center align text in smaller viewports */
 }
 
+/* Content section */
 .intro-content {
     width: 70%; /* Take up 70% of the width */
     max-width: calc(100% - 15rem); /* Adjust based on the image size and margin */
     padding-right: 2rem; /* Space between text and image */
 }
 
+/* Image wrapper */
 .intro-image-wrapper {
     width: 30%; /* Take up 30% of the width */
     display: flex; /* Use flexbox to center the image */
@@ -33,7 +58,7 @@ section {
 
 .intro-image {
     width: 100%; /* Make image fit its container */
-    max-width: 200px; /* Maximum width */
+    max-width: 25rem; /* Maximum width */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Cover the image area while maintaining aspect ratio */
     border-radius: 0.5rem; /* Dynamic border radius */
@@ -61,4 +86,22 @@ section {
         width: 80vw; /* Adjusted responsive width */
         max-width: 150px; /* Smaller maximum width */
     }
+}
+
+/* IntroSection.css */
+.contact-button {
+    background: none; /* No background color */
+    border: 2px solid #00f9e3; /* Neon turquoise border */
+    color: #00f9e3; /* Neon turquoise text */
+    padding: 0.75rem 1.5rem; /* Adjust padding */
+    font-size: 1rem; /* Adjust font size */
+    font-family: "Roboto", sans-serif; /* Consistent font */
+    border-radius: 0.5rem; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.contact-button:hover {
+    background-color: #00f9e3; /* Neon turquoise background on hover */
+    color: #093257; /* Darker text color on hover */
 }

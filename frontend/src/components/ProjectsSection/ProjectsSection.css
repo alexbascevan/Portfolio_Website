@@ -1,6 +1,5 @@
 /* Projects section */
 .projects {
-    background-color: #7A1CAC; /* Dark purple background */
     color: #ffffff;
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */

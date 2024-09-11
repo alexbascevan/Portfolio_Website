@@ -8,7 +8,6 @@ body, html, h1, p, form, input, textarea, button {
 
 /* Contact section styling */
 .contact {
-    background-color: #7A1CAC; /* Deep purple background */
     color: #fff; /* White text color */
     padding: 2rem;
 }
@@ -61,13 +60,13 @@ form {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem; /* Space below label */
-    color: #7A1CAC; /* Dark purple color for labels */
+    color: #000000; /* Dark purple color for labels */
 }
 
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 0.625rem; /* Padding inside inputs/textarea */
-    border: 1px solid #2E073F; /* Dark purple border */
+    border: 1px solid #000000; /* Dark purple border */
     border-radius: 0.25rem; /* Rounded corners */
     box-sizing: border-box;
 }
@@ -79,7 +78,7 @@ form {
 
 /* Button styling */
 button {
-    background-color: #AD49E1; /* Vibrant purple background */
+    background-color: #000000; /* Vibrant purple background */
     color: #fff; /* White text color */
     border: none;
     padding: 0.625rem 1.25rem; /* Padding inside button */
@@ -90,7 +89,7 @@ button {
 }
 
 button:hover {
-    background-color: #7A1CAC; /* Darker purple on hover */
+    background-color: #4c4a4e; 
 }
 
 /* Confirmation and error messages */
@@ -103,10 +102,18 @@ button:hover {
 }
 
 .confirmation-message {
-    border: 1px solid #EBD3F8; /* Light purple border */
-    background-color: #EBD3F8; /* Light purple background */
-    color: #2E073F; /* Dark purple text */
+    border: 2px solid #00e676; /* Bright green border for a fresh look */
+    background-color: #d4edda; /* Soft green background */
+    color: #155724; /* Dark green text for better readability */
+    padding: 1rem; /* Add some padding for spacing */
+    border-radius: 0.5rem; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: "Roboto", sans-serif; /* Consistent font */
+    text-align: center; /* Center text alignment */
+    max-width: 400px; /* Maximum width for better control */
+    margin: 1rem auto; /* Center alignment with margin */
 }
+
 
 .error-message {
     border: 1px solid #F8D7DA; /* Light red border for errors */

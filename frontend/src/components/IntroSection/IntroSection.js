@@ -1,14 +1,26 @@
 // src/components/IntroSection.js
 import React from 'react';
-import './IntroSection.css'; // Create this CSS file to style this component
+import './IntroSection.css';
 
 const IntroSection = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="intro" className="section intro">
         <div className="intro-content">
-            <h1>Welcome to Alex Bascevan's Portfolio</h1>
-            <p>Hello! I'm Alex Bascevan, a passionate software developer with a focus on creating innovative and efficient solutions. I specialize in web development and enjoy working on projects that challenge me and allow me to grow as a developer.</p>
-            <p>Explore my portfolio to see some of the projects I've worked on, and feel free to get in touch if you'd like to collaborate or learn more about my work.</p>
+            <h1 className="name">Alexander Bascevan</h1>
+            <h3 className="title">Software Engineer | Cybersecurity Enthusiast</h3>
+            <p className="summary">
+              I’m a Software Engineer based in the Greater Toronto Area, specializing in creating exceptional digital 
+              experiences. With a keen interest in cybersecurity, I am dedicated to building robust, secure solutions 
+              that meet the highest standards.
+            </p>
+            <button className="contact-button" onClick={scrollToContact}>Get In Touch</button>
         </div>
         <div className="intro-image-wrapper">
             <img src="/images/headshot.png" alt="Headshot of Alex Bascevan" className="intro-image" />

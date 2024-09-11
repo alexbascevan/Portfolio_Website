@@ -1,4 +1,4 @@
-/* src/index.css */
+
 
 /* Reset margins and global styles */
 body, html, h1, p, form, input, textarea, button {
@@ -19,8 +19,8 @@ html {
 body {
   margin: 0;
   line-height: 1.6;
-  color: #7A1CAC; /* Dark purple text color */
-  background-color: #EBD3F8; /* Light purple background color */
+  color: #ffffff; /* Dark purple text color */
+  background-color: #093257; 
 }
 
 /* Smooth scrolling for anchor links */
