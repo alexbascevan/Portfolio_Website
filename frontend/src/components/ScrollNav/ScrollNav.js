@@ -1,6 +1,6 @@
 // src/components/ScrollNav/ScrollNav.js
 import React, { useEffect } from 'react';
-import './ScrollNav.css'; // Ensure this file contains the relevant styles
+import './ScrollNav.css';
 
 const ScrollNav = () => {
   useEffect(() => {

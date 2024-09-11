@@ -1,4 +1,3 @@
-// src/components/IntroSection.js
 import React from 'react';
 import './IntroSection.css';
 
@@ -14,7 +13,7 @@ const IntroSection = () => {
     <section id="intro" className="section intro">
         <div className="intro-content">
             <p className="hi" >Hi, my name is</p>
-            <h1 className="name">Alexander Bascevan</h1>
+            <h1 className="name">Alex Bascevan</h1>
             <h3 className="title">Software Engineer | Cybersecurity Enthusiast</h3>
             <p className="summary">
               I’m a <span style={{ color: '#00f9e3' }}>Software Engineer </span>

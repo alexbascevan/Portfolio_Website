@@ -1,24 +1,65 @@
-/* Technologies section */
+/* Ensure the section stacks content properly */
 .technologies {
-    color: #ffffff; 
     padding: 2rem;
+    text-align: center; /* Center text in the section */
+    display: block; /* Ensure this section stacks elements */
+  }
+  
+  /* Ensure h2 is displayed as a block element and not aligned with the table */
+  .technologies h2 {
+    display: block;
+    width: 100%;
     text-align: center;
-}
-
-.technologies h1 {
-    margin: 1rem 0; /* Adjust header margin */
-}
-
-/* General section styling */
-section {
-    height: 100vh;
-    width: 100vw;
+    margin: 8rem 0 2rem 0; /* Space between h2 and the table */
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Ensure the table is centered and structured properly */
+  .technologies-table {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start; /* Snap each section to the start */
-    color: #fff; /* White text color for sections */
-    padding: 2rem;
-}
-
-
+    justify-content: center; /* Center columns horizontally */
+    max-width: 1000px;
+    margin: 0 auto; /* Center the table within the section */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+  }
+  
+  /* Define each column and its styling */
+  .column {
+    text-align: left;
+    flex: 1;
+    padding: 1rem;
+    min-width: 200px; /* Ensure columns have a minimum width for better layout */
+    border-right: 1px solid #00f9e3; /* Horizontal line between columns */
+  }
+  
+  /* Remove the border from the last column */
+  .column:last-child {
+    border-right: none;
+  }
+  
+  .column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #00f9e3; /* Neon turquoise for subheadings */
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .column li {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Center align icon and text */
+  }
+  
+  .column li i {
+    margin-right: 0.5rem; /* Space between icon and text */
+    color: #00f9e3; /* Neon turquoise for icons */
+  }
+  

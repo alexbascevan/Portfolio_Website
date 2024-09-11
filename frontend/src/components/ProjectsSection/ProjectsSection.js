@@ -7,10 +7,6 @@ const ProjectsSection = () => {
     <section id="projects" class="section projects">
       <div>
         <h2>Projects</h2>
-        <p class="projects-description">Check out my projects on GitHub:</p>
-        <a href="https://github.com/alexbascevan" target="_blank" class="github-link">
-          <i class="fab fa-github"></i> GitHub
-        </a>
       </div>
     </section>       
   );

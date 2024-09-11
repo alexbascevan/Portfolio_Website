@@ -10,6 +10,8 @@ import ProjectsSection from './components/ProjectsSection/ProjectsSection';
 import TechnologiesSection from './components/TechnologiesSection/TechnologiesSection';
 import NavBar from './components/TopNavBar/NavBar';
 import RightLinkBar from './components/RightLinkBar/RightLinkBar';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const App = () => {
   return (
