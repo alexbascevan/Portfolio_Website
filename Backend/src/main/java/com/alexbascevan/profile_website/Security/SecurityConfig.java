@@ -66,6 +66,7 @@ public class SecurityConfig {
         http
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/").permitAll() // Allow unrestricted access to the root URL
+                .requestMatchers("/api/sendEmail").permitAll() // Allow unrestricted access to /api/sendEmail
                 .requestMatchers(PathRequest.toH2Console()).permitAll() // Allow unrestricted access to H2 database console
                 .anyRequest().authenticated() // Require authentication for all other requests
             )
