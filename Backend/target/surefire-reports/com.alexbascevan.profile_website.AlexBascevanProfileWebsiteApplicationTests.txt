@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.alexbascevan.profile_website.AlexBascevanProfileWebsiteApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.903 s -- in com.alexbascevan.profile_website.AlexBascevanProfileWebsiteApplicationTests
