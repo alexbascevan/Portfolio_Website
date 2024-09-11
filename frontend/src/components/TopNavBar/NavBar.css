@@ -1,31 +1,48 @@
-/* NavBar.css */
 .navbar {
-    display: flex;
-    justify-content: flex-end; /* Align buttons to the right */
-    align-items: center; /* Center buttons vertically */
-    padding: 0.5rem 1rem; /* Adjust padding */
-    position: fixed; /* Fixed positioning */
-    top: 1rem; /* Space from the top */
-    right: 1rem; /* Space from the right */
-    border-radius: 0.5rem; /* Rounded corners */
-    z-index: 1000; /* Ensure it stays above other content */
-  }
-  
-  .nav-button {
-    background: none; /* No background color */
-    border: 2px solid #00f9e3; /* Neon turquoise border */
-    color:  #00f9e3; /* Neon turquoise text */
-    padding: 0.5rem 1rem; /* Adjust padding */
-    font-size: 0.9rem; /* Slightly smaller font size */
-    font-family: "Roboto", sans-serif; /* Consistent font */
-    border-radius: 0.5rem; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    margin-left: 0.5rem; /* Space between buttons */
-  }
-  
-  .nav-button:hover {
-    background-color:  #00f9e3; /* Neon turquoise background on hover */
-    color: #093257; /* Darker text color on hover */
-  }
-  
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  align-items: center; /* Center buttons vertically */
+  padding: 0.5rem 1rem; /* Adjust padding */
+  position: fixed; /* Fixed positioning */
+  top: 1rem; /* Space from the top */
+  right: 1rem; /* Space from the right */
+  border-radius: 0.5rem; /* Rounded corners */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.nav-button {
+  background: none; /* No background color */
+  border: none; /* No border by default */
+  color: #ffffff; /* Default text color */
+  padding: 0.5rem 0.6rem; /* Adjust padding */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  font-family: "Roboto", sans-serif; /* Consistent font */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: border 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+  margin-left: 0.5rem; /* Space between buttons */
+}
+
+.nav-button:hover {
+  border: 2px solid #00f9e3; /* Neon turquoise border on hover */
+  background-color: #093257; /* Darker background color on hover */
+  color: #fff; /* White text color on hover */
+}
+
+.resume-button {
+  background: none; /* No background color */
+  border: 2px solid #00f9e3; /* Always have border */
+  color: #00f9e3; /* Neon turquoise text */
+  padding: 0.5rem 0.6rem; /* Adjust padding */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  font-family: "Roboto", sans-serif; /* Consistent font */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 0.5rem; /* Space between buttons */
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+  text-decoration: none;
+}
+
+.resume-button:hover {
+  background-color: #093257; /* Darker background color on hover */
+  color: #093257; /* Darker text color on hover */
+}

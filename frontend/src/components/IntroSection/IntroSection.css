@@ -3,14 +3,20 @@ section {
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
     scroll-snap-align: start; /* Snap each section to the start */
     color: #fff; /* White text color for sections */
     padding: 3rem;
 }
 
 /* Introduction section */
+
+.hi{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #00f9e3;
+}
+
 .name {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -20,6 +26,8 @@ section {
 }
 
 .title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-size: 3rem;
     color: #6f7788;
     margin: 0; /* Remove default margin */
@@ -27,6 +35,8 @@ section {
 }
 
 .summary {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
     margin: 0; /* Remove default margin */
     font-size: 1.2rem; /* Adjust font size as needed */
     line-height: 1.5; /* Improve readability */
@@ -39,7 +49,7 @@ section {
     align-items: center; /* Center items vertically */
     padding: 2rem; /* Dynamic padding */
     box-sizing: border-box; /* Ensure padding is included in width */
-    text-align: center; /* Center align text in smaller viewports */
+    /* text-align: center; Center align text in smaller viewports */
 }
 
 /* Content section */
@@ -96,9 +106,9 @@ section {
     padding: 0.75rem 1.5rem; /* Adjust padding */
     font-size: 1rem; /* Adjust font size */
     font-family: "Roboto", sans-serif; /* Consistent font */
-    border-radius: 0.5rem; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
+
 }
 
 .contact-button:hover {

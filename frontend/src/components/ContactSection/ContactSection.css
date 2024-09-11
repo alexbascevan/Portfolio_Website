@@ -39,8 +39,10 @@ body, html, h1, p, form, input, textarea, button {
 }
 
 .linkedin-link i {
+    font-size: 1.5rem; /* Adjust size of the icon */
     margin-right: 0.5rem; /* Space between icon and text */
 }
+
 
 /* Form styling */
 form {

@@ -52,7 +52,7 @@ section {
   height: 1.875rem; /* Larger size */
   background-color: transparent; /* Make background transparent */
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Square shape */
-  border: 0.125rem solid #ffffff; /* Border color for square */
+  border: 0.125rem solid #00f9e3; /* Border color for square */
   animation: transformSquare 0.3s ease; /* Animation for transforming to square */
 }
 
@@ -71,7 +71,7 @@ section {
 }
 
 .nav-diamond:hover {
-  background-color: #ffffff; 
+  background-color: #00f9e3; 
 }
 
 /* Smooth scrolling for anchor links */
