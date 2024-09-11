@@ -1,10 +1,11 @@
-/* src/components/ProjectsSection/ProjectsSection.css */
-
 /* Projects section */
 .projects {
-    background-color: #EBD3F8; /* Light purple background */
-    color: #7A1CAC; /* Dark purple text color */
-    text-align: center; /* Center text */
+    background-color: #7A1CAC; /* Dark purple background */
+    color: #ffffff;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 2rem; /* Dynamic padding */
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 /* Paragraph spacing */

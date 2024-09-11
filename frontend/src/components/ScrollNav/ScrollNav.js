@@ -40,11 +40,12 @@ const ScrollNav = () => {
   }, []);
 
   return (
-    <div className="nav-container">
-      <div className="nav-diamond" data-target="section1"></div>
-      <div className="nav-diamond" data-target="section2"></div>
-      <div className="nav-diamond" data-target="section3"></div>
-      {/* Add more diamonds as needed */}
+    <div class="nav-container">
+      <div class="nav-diamond" data-target="intro"></div>
+      <div class="nav-diamond" data-target="background"></div>
+      <div class="nav-diamond" data-target="technologies"></div>
+      <div class="nav-diamond" data-target="projects"></div>
+      <div class="nav-diamond" data-target="contact"></div>
     </div>
   );
 };

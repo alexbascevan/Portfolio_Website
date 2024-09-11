@@ -1,5 +1,3 @@
-/* src/components/MyBackgroundSection/MyBackgroundSection.css */
-
 /* My Background section */
 .myBackground {
     background-color: #EBD3F8; /* Light purple background */
@@ -8,6 +6,14 @@
     text-align: center;
 }
 
+.myBackground h1 {
+    margin-bottom: 1rem; /* Space below the main heading */
+}
+
 .myBackground h2 {
-    margin: 1rem 0;
+    margin: 1rem 0; /* Space around subheadings */
+}
+
+.myBackground p {
+    margin: 1rem 0; /* Space around paragraph */
 }

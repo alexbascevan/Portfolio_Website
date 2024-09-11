@@ -4,10 +4,13 @@ import com.alexbascevan.profile_website.Models.Email;
 import com.alexbascevan.profile_website.Services.Mailer;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -54,4 +57,18 @@ public class MainController {
         // Redirect to the root URL
         return "redirect:/";
     }
+
+    @PostMapping("/api/sendEmail") // Adjusted to match your React fetch URL
+    public ResponseEntity<String> sendEmail(@RequestBody Email email) {
+        try {
+            email.setSubject("*** From your profile Website ***");
+            email.setMessage("Senders Name: " + email.getSendersName() + "\nSenders Email: " + email.getSendersEmail() + "\n\n" + email.getMessage());
+            mailer.sendEmail(email);
+            return ResponseEntity.ok("Email has been sent successfully!");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An error occurred while sending the email.");
+        }
+    }
+    
 }

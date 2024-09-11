@@ -4,10 +4,14 @@ import './MyBackgroundSection.css'; // Create this CSS file to style this compon
 
 const MyBackgroundSection = () => {
   return (
-    <section className="myBackground">
-      <h2>My Background</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </section>
+    <section id="background" class="section myBackground">
+    <div>
+        <h1>My Background</h1>
+        <h2>Education:</h2>
+        <p>Details about your education...</p>
+        <h2>Technologies</h2>
+    </div>
+</section>
   );
 };
 

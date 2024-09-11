@@ -4,13 +4,15 @@ import './ProjectsSection.css'; // Create this CSS file to style this component
 
 const ProjectsSection = () => {
   return (
-    <section className="projects">
-      <h2>Projects</h2>
-      <p className="projects-description">Here are some of my projects.</p>
-      <a href="https://github.com/your-profile" className="github-link">
-        <i className="fab fa-github"></i> View on GitHub
-      </a>
-    </section>
+    <section id="projects" class="section projects">
+      <div>
+        <h2>Projects</h2>
+        <p class="projects-description">Check out my projects on GitHub:</p>
+        <a href="https://github.com/alexbascevan" target="_blank" class="github-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </section>       
   );
 };
 

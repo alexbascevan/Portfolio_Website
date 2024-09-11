@@ -4,10 +4,21 @@ import './TechnologiesSection.css'; // Create this CSS file to style this compon
 
 const TechnologiesSection = () => {
   return (
-    <section className="technologies">
-      <h2>Technologies</h2>
-      <p>Here are some technologies I work with.</p>
-    </section>
+    <section id="technologies" class="section technologies">
+    <div>
+        <h1>Technologies</h1>
+        <p>Here are some of the technologies I work with:</p>
+        <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Thymeleaf</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>Docker</li>
+        </ul>
+    </div>
+</section>
   );
 };
 

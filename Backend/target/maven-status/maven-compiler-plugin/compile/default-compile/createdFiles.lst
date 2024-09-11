@@ -2,6 +2,7 @@ com/alexbascevan/profile_website/Models/MyEmail.class
 com/alexbascevan/profile_website/Services/Mailer.class
 com/alexbascevan/profile_website/Models/MyUserDetails.class
 com/alexbascevan/profile_website/Controllers/MainController.class
+WebConfig.class
 com/alexbascevan/profile_website/Models/Email.class
 com/alexbascevan/profile_website/Data/UserDetailsRepository.class
 com/alexbascevan/profile_website/Data/MyEmailRepository.class

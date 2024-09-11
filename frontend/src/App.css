@@ -1,38 +1,308 @@
-.App {
+/* Reset margins and global styles */
+body, html, h1, p, form, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Ensure scrolling behavior for snapping */
+html {
+  scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  height: 100%; /* Full height for proper scrolling */
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  color: #7A1CAC; /* Dark purple text color */
+  background-color: #EBD3F8; /* Light purple background color */
+}
+
+/* Section styling */
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start; /* Snap each section to the start */
+  color: #fff; /* White text color for sections */
+  padding: 2rem;
+}
+
+/* Introduction section */
+.intro {
+  background-color: #7A1CAC; /* Dark purple background */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  padding: 2rem; /* Dynamic padding */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.intro-content {
+  width: 70%; /* Take up 70% of the width */
+  max-width: calc(100% - 15rem); /* Adjust based on the image size and margin */
+  padding-right: 2rem; /* Space between text and image */
+}
+
+.intro-image-wrapper {
+  width: 30%; /* Take up 30% of the width */
+  display: flex; /* Use flexbox to center the image */
+  justify-content: center; /* Center the image horizontally */
+}
+
+.intro-image {
+  width: 100%; /* Make image fit its container */
+  max-width: 200px; /* Maximum width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the image area while maintaining aspect ratio */
+  border-radius: 0.5rem; /* Dynamic border radius */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .intro {
+      flex-direction: column; /* Stack text and image vertically */
+      align-items: center;
+      text-align: center; /* Center align text */
+  }
+
+  .intro-content {
+      width: 100%; /* Full width for smaller screens */
+      padding: 0; /* Remove padding for mobile view */
+  }
+
+  .intro-image-wrapper {
+      width: 100%; /* Full width for image wrapper */
+      margin-top: 1rem; /* Space between text and image */
+  }
+
+  .intro-image {
+      width: 80vw; /* Adjusted responsive width */
+      max-width: 150px; /* Smaller maximum width */
+  }
+}
+
+/* My Background section */
+.myBackground {
+  background-color: #EBD3F8; /* Light purple background */
+  color: #7A1CAC; /* Dark purple text color */
+  padding: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.myBackground h2 {
+  margin: 1rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Technologies section */
+.technologies {
+  background-color: #7A1CAC; /* Dark purple background */
+  color: #EBD3F8; /* Light purple text color */
+  padding: 2rem;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.technologies h2 {
+  margin: 1rem 0;
+}
+
+/* Projects section */
+.projects {
+  background-color: #EBD3F8; /* Light purple background */
+  color: #7A1CAC; /* Dark purple text color */
+  text-align: center; /* Center text */
+}
+
+/* Paragraph spacing */
+.projects-description {
+  margin: 1rem 0; /* Add vertical margin to the paragraph */
+  font-size: 1.125rem; /* Adjust font size if needed */
+}
+
+/* GitHub link styling */
+.github-link {
+  display: inline-flex; /* Align icon and text */
+  align-items: center; /* Vertically center */
+  text-decoration: none; /* Remove underline */
+  color: #ffffff; /* White text color */
+  font-size: 1.125rem; /* Font size */
+  padding: 0.5rem 1rem; /* Padding around the text */
+  border-radius: 0.25rem; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  margin-top: 1rem; /* Add margin-top to create space above the link */
+}
+
+.github-link:hover {
+  background-color: #444; /* Darker background on hover */
+}
+
+.github-link i {
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+/* Contact section color */
+.contact {
+  background-color: #7A1CAC; /* Deep purple background */
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  color: #7A1CAC;
+  padding: 1rem 0;
+  background-color: #ffffff; /* Dark purple background color */
+  color: #EBD3F8; /* Light purple text color */
+  width: 100%;
+  bottom: 0;
+}
+
+/* Links styling */
+a {
+  color: #AD49E1; /* Vibrant purple for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Form styling */
+.email-form {
+  background: #fff; /* White background for form */
+  padding: 2rem; /* Dynamic padding */
+  border-radius: 0.5rem; /* Dynamic border radius */
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Dynamic shadow */
+  max-width: 90%; /* Responsive width */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.email-form h1 {
+  font-size: 2rem; /* Responsive font size */
+  margin-bottom: 1.25rem;
+  color: #7A1CAC; /* Dark purple for heading */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #7A1CAC; /* Deep purple for labels */
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 0.625rem; /* Dynamic padding */
+  border: 1px solid #2E073F; /* Dark purple border */
+  border-radius: 0.25rem; /* Dynamic border radius */
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: auto; /* Auto height to adjust with content */
+  resize: vertical;
+}
+
+/* Button styling */
+button {
+  background-color: #AD49E1; /* Vibrant purple background */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 0.625rem 1.25rem; /* Dynamic padding */
+  border-radius: 0.25rem; /* Dynamic border radius */
+  cursor: pointer;
+  font-size: 1rem; /* Dynamic font size */
+}
+
+button:hover {
+  background-color: #7A1CAC; /* Darker purple on hover */
+}
+
+/* Confirmation and error messages */
+.confirmation-message, .error-message {
+  display: none;
+  padding: 0.625rem; /* Dynamic padding */
+  border-radius: 0.3125rem; /* Dynamic border radius */
+  margin-top: 0.625rem;
+  font-size: 1rem; /* Dynamic font size */
+}
+
+.confirmation-message {
+  border: 1px solid #EBD3F8; /* Light purple border */
+  background-color: #EBD3F8; /* Light purple background */
+  color: #2E073F; /* Dark purple text */
+}
+
+.error-message {
+  border: 1px solid #F8D7DA; /* Light red border for errors */
+  background-color: #F8D7DA; /* Light red background */
+  color: #721C24; /* Dark red text color */
+}
+
+/* Container for the navigation diamonds */
+.nav-container {
+  position: fixed;
+  top: 50%;
+  right: 2rem; /* Dynamic right positioning */
+  transform: translateY(-50%);
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* General style for the navigation diamonds */
+.nav-diamond {
+  width: 1.25rem; /* Dynamic size */
+  height: 1.25rem; /* Dynamic size */
+  background-color: #2E073F; /* Dark purple fill */
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin-bottom: 0.625rem; /* Dynamic margin */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 0.125rem solid #2E073F; /* Dark purple border */
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for the selected diamond */
+.nav-diamond.active {
+  width: 1.875rem; /* Larger size */
+  height: 1.875rem; /* Larger size */
+  background-color: transparent; /* Make background transparent */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Square shape */
+  border: 0.125rem solid #2E073F; /* Border color for square */
+  animation: transformSquare 0.3s ease; /* Animation for transforming to square */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Keyframes for transforming to square animation */
+@keyframes transformSquare {
+  0% {
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Diamond shape */
+      width: 1.25rem; /* Initial size */
+      height: 1.25rem; /* Initial size */
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Square shape */
+      width: 1.875rem; /* Final size */
+      height: 1.875rem; /* Final size */
   }
+}
+
+.nav-diamond:hover {
+  background-color: #7A1CAC; /* Deep purple on hover */
+}
+
+/* Smooth scrolling for anchor links */
+a[href^="#"] {
+  scroll-behavior: smooth;
 }
