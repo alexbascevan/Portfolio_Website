@@ -11,11 +11,42 @@ html {
   scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
   scroll-behavior: smooth; /* Smooth scrolling */
   height: 100%; /* Full height for proper scrolling */
+  overflow-x: hidden; /* Hide horizontal overflow globally */
   overflow-y: scroll; /* Enable vertical scrolling */
 }
 
+/* Body styles */
 body {
   margin: 0;
   line-height: 1.5;
   background-color: #07203e; 
+}
+
+/* Container and section styles */
+.container, .section {
+  max-width: 100%; /* Prevent content from exceeding viewport width */
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+/* Apply scroll snapping to sections */
+.section {
+  scroll-snap-align: start; /* Ensure sections snap to the start */
+}
+
+/* Handle specific scrollable elements */
+.scrollable-element {
+  overflow-x: auto; /* Allow horizontal scroll if necessary */
+  max-width: 100%; /* Prevent exceeding viewport width */
+}
+
+/* Flexbox container example */
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping and horizontal overflow */
+}
+
+/* Grid container example */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); /* Responsive grid */
 }
