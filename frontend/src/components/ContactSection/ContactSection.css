@@ -1,17 +1,29 @@
-/* Contact section styling */
-.contact {
-    color: #fff; /* White text color */
-    padding: 2rem;
-}
-
-.contact h1 {
+h1{
     text-align: center; /* Center align heading */
-    margin-bottom: 1rem; /* Space below heading */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #00f9e3;
+    margin: 0; /* Remove default margin */
+    margin-bottom: 1rem; /* Space below title */
 }
 
-.contact p {
+p{
+    text-align: center; /* Center align heading */
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin: 0; /* Remove default margin */
+    margin-bottom: 1rem; /* Space below title */
+}
+
+.connectInvite {
     text-align: center; /* Center align paragraph text */
     margin-bottom: 1rem; /* Space below paragraph */
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
 }
 
 .linkedin-link {
@@ -114,3 +126,4 @@ button:hover {
     background-color: #F8D7DA; /* Light red background */
     color: #721C24; /* Dark red text color */
 }
+

@@ -78,9 +78,9 @@ const Contact = () => {
 
 
   return (
-    <section id="contact" className="section contact">
+    <section id="contact" className="contact">
       <div>
-        <h1 style={{ textAlign: 'center' }}>Contact Me</h1>
+        <h1>Contact Me</h1>
     
         <br />
         <p> If you'd like to get in touch with me, please feel free to reach out via email or LinkedIn. I'm always open to discussing new opportunities and collaborations.</p>

@@ -2,34 +2,58 @@
 .projects {
     color: #ffffff;
     display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    padding: 2rem; /* Dynamic padding */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 6rem; /* Dynamic padding */
     box-sizing: border-box; /* Ensure padding is included in width */
+    background-color: #07203e; /* Background color */
+    overflow: hidden; /* Prevent overflow */
 }
 
-/* Paragraph spacing */
-.projects-description {
-    margin: 1rem 0; /* Add vertical margin to the paragraph */
-    font-size: 1.125rem; /* Adjust font size if needed */
+h1 {
+    text-align: center; /* Center align heading */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #00f9e3;
+    margin: 0; /* Remove default margin */
+    margin-bottom: 2rem; /* Space below title */
 }
 
-/* GitHub link styling */
-.github-link {
-    display: inline-flex; /* Align icon and text */
-    align-items: center; /* Vertically center */
-    text-decoration: none; /* Remove underline */
-    color: #ffffff; /* White text color */
-    font-size: 1.125rem; /* Font size */
-    padding: 0.5rem 1rem; /* Padding around the text */
-    border-radius: 0.25rem; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-    margin-top: 1rem; /* Add margin-top to create space above the link */
+/* Projects grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; /* Space between grid items */
+    width: 100%; /* Ensure grid takes full width */
+    max-width: calc(100% - 2rem); /* Prevent overflow by subtracting padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0 auto; /* Center the grid horizontally */
 }
 
-.github-link:hover {
-    background-color: #444; /* Darker background on hover */
+/* Project card styling */
+.project-card {
+    background-color: #fff; /* White background for project cards */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+    color: #000; /* Dark text color for better readability */
+    text-align: center; /* Center text inside card */
 }
 
-.github-link i {
-    margin-right: 0.5rem; /* Space between icon and text */
+.project-card img {
+    width: 100%; /* Ensure image takes full width of card */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover image to fill the container */
+}
+
+.project-title {
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+.project-blurb {
+    margin: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #333; /* Darker text color for blurb */
 }
