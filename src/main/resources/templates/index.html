@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="/Styles.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <script th:src="@{/Script.js}" defer></script>
     </head>
 
@@ -26,11 +27,41 @@
             <section id="background" class="section myBackground">
                 <div>
                     <h1>My Background</h1>
-                    <h2>Education: </h2>
+                    <h2>Education:</h2>
+                    <p>Details about your education...</p>
                     <h2>Technologies</h2>
                     <!-- Add tech icons and animations here -->
                 </div>
             </section>
+
+            <!-- Technologies Section -->
+            <section id="technologies" class="section technologies">
+                <div>
+                    <h1>Technologies</h1>
+                    <p>Here are some of the technologies I work with:</p>
+                    <ul>
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>Thymeleaf</li>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <!-- Add more technologies as needed -->
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section projects">
+                <h2>Projects</h2><br>
+                <p>Check out my projects on GitHub:</p><br><br>
+                <a href="https://github.com/alexbascevan" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <!-- Add more project details here -->
+            </section>
+                
 
             <!-- Contact Section -->
             <section id="contact" class="section contact">
@@ -86,6 +117,8 @@
         <div class="nav-container">
             <div class="nav-diamond" data-target="intro"></div>
             <div class="nav-diamond" data-target="background"></div>
+            <div class="nav-diamond" data-target="technologies"></div>
+            <div class="nav-diamond" data-target="projects"></div>
             <div class="nav-diamond" data-target="contact"></div>
         </div>
     </body>
