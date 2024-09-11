@@ -9,17 +9,20 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+/**
+ * Represents an email entity for persistence in the database.
+ * Uses Lombok annotations to generate constructors, getters, setters, equals, hashCode, and toString methods.
+ */
+@Entity // Marks this class as a JPA entity
+@Data // Lombok annotation to generate getters, setters, equals, hashCode, and toString methods
+@AllArgsConstructor // Lombok annotation to generate a constructor with all fields
+@NoArgsConstructor // Lombok annotation to generate a no-arguments constructor
 public class MyEmail {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "user_sequence2")
-    @SequenceGenerator(name = "user_sequence2", initialValue = 2, allocationSize = 1)
-    private int id;
-    private String email;
-
+    @Id // Specifies the primary key of the entity
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "user_sequence2") // Automatically generates unique values for the primary key
+    @SequenceGenerator(name = "user_sequence2", initialValue = 2, allocationSize = 1) // Defines the sequence generator for the primary key
+    private int id; // The unique identifier for the email entity
+    
+    private String email; // The email address to be stored in the database
 }
-
