@@ -1,0 +1,13 @@
+/* src/components/TechnologiesSection/TechnologiesSection.css */
+
+/* Technologies section */
+.technologies {
+    background-color: #7A1CAC; /* Dark purple background */
+    color: #EBD3F8; /* Light purple text color */
+    padding: 2rem;
+    text-align: center;
+}
+
+.technologies h2 {
+    margin: 1rem 0;
+}

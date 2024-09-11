@@ -1,0 +1,11 @@
+/* src/components/Footer/Footer.css */
+
+/* Footer styling */
+footer {
+    text-align: center;
+    color: #EBD3F8; /* Light purple text color */
+    padding: 1rem 0;
+    background-color: #7A1CAC; /* Dark purple background color */
+    width: 100%;
+    bottom: 0;
+}
