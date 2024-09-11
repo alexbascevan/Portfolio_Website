@@ -9,11 +9,13 @@ import MyBackgroundSection from './components/MyBackgroundSection/MyBackgroundSe
 import ProjectsSection from './components/ProjectsSection/ProjectsSection';
 import TechnologiesSection from './components/TechnologiesSection/TechnologiesSection';
 import NavBar from './components/TopNavBar/NavBar';
+import RightLinkBar from './components/RightLinkBar/RightLinkBar';
 
 const App = () => {
   return (
     <div>
       <NavBar />
+      <RightLinkBar />
       <ScrollNav />
       <IntroSection />
       <MyBackgroundSection />

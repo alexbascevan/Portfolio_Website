@@ -81,17 +81,7 @@ const Contact = () => {
     <section id="contact" className="section contact">
       <div>
         <h1 style={{ textAlign: 'center' }}>Contact Me</h1>
-        <br />
-        <div style={{ textAlign: 'center' }}>
-          <a href="https://www.linkedin.com/in/alex-bascevan-2697752b7/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Connect with me on LinkedIn"
-            className="linkedin-link">
-            <i className="fab fa-linkedin"></i>
-            <span>Connect with me on LinkedIn</span>
-          </a>
-        </div>
+    
         <br />
         <p> If you'd like to get in touch with me, please feel free to reach out via email or LinkedIn. I'm always open to discussing new opportunities and collaborations.</p>
         <br />

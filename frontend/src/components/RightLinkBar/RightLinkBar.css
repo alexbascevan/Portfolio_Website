@@ -1,0 +1,24 @@
+.right-link-bar {
+    position: fixed; /* Fixed positioning */
+    top: 10%; /* Space from the top */
+    right: 0; /* Align to the right */
+    display: flex; /* Flex container */
+    flex-direction: column; /* Vertical alignment */
+    align-items: center; /* Center items horizontally */
+    z-index: 1000; /* Ensure it stays above other content */
+    padding-right: 2.5rem;
+  }
+  
+  .link-icon {
+    display: block; /* Block display for spacing */
+    color: #ffffff; /* White color for icons */
+    font-size: 1.5rem; /* Font size of icons */
+    margin: 0.5rem 0; /* Space between icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .link-icon:hover {
+    color: #00f9e3; /* Neon turquoise color on hover */
+  }
+  

@@ -6,6 +6,7 @@ section {
     scroll-snap-align: start; /* Snap each section to the start */
     color: #fff; /* White text color for sections */
     padding: 3rem;
+    padding-left: 3rem;
 }
 
 /* Introduction section */

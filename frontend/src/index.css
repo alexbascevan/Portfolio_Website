@@ -1,11 +1,15 @@
-
-
 /* Reset margins and global styles */
 body, html, h1, p, form, input, textarea, button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+
+/* Adjust margin for main content to make space for the fixed left nav */
+main {
+  margin-left: 4rem; /* Adjust this value to create space for your left nav */
+  padding: 1rem; /* Optional: Add padding for better spacing */
 }
 
 /* Ensure scrolling behavior for snapping */
