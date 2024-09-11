@@ -8,10 +8,12 @@ import IntroSection from './components/IntroSection/IntroSection';
 import MyBackgroundSection from './components/MyBackgroundSection/MyBackgroundSection';
 import ProjectsSection from './components/ProjectsSection/ProjectsSection';
 import TechnologiesSection from './components/TechnologiesSection/TechnologiesSection';
+import NavBar from './components/TopNavBar/NavBar';
 
 const App = () => {
   return (
     <div>
+      <NavBar />
       <ScrollNav />
       <IntroSection />
       <MyBackgroundSection />
