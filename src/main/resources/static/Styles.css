@@ -1,142 +1,184 @@
-body, h1, p, form, input, textarea, button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Reset margins and global styles */
+body, html, h1, p, form, input, textarea, button {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-family: Arial, sans-serif; /* Set default font */
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    scroll-snap-type: y mandatory; /* Enable snap scrolling along the vertical axis */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    line-height: 1.6; /* Set line height for better readability */
+    color: #333; /* Default text color */
+    background-color: #f4f4f4; /* Default background color */
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+section {
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    scroll-snap-align: start; /* Align section with the start of the viewport */
+    color: #fff; /* Default text color for sections */
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
+/* Section colors */
+.intro, .contact {
+    background-color: #6c01d6; /* Dark purple background for intro and contact sections */
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.myBackground {
+    background-color: #fff; /* White background for sections with myBackground class */
+    color: #6a0dad; /* Purple text color for sections with myBackground class */
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+/* Footer styling */
+footer {
+    text-align: center; /* Center text in the footer */
+    padding: 10px 0; /* Vertical padding */
+    background-color: #333; /* Dark background color for footer */
+    color: #fff; /* White text color for footer */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom */
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+/* Links styling */
+a {
+    color: inherit; /* Inherit color from parent element */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
 }
 
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
+/* Form styling */
 .email-form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff; /* White background for form */
+    padding: 20px; /* Padding around form content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .email-form h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2em; /* Font size for form heading */
+    margin-bottom: 20px; /* Space below heading */
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Space below each form group */
 }
 
 .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+    display: block; /* Block display for labels */
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; /* Space below label */
 }
 
 .form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    width: 100%; /* Full width of the container */
+    padding: 10px; /* Padding inside inputs and textareas */
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .form-group textarea {
-    height: 150px;
-    resize: vertical;
+    height: 150px; /* Fixed height for textareas */
+    resize: vertical; /* Allow vertical resizing */
 }
 
+/* Button styling */
 button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+    background-color: #333; /* Dark background color for button */
+    color: #fff; /* White text color for button */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #555; /* Darker background on hover */
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+/* Confirmation and error messages */
 .confirmation-message, .error-message {
-    display: none;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-size: 16px;
+    display: none; /* Hide messages by default */
+    padding: 10px; /* Padding inside messages */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Space above messages */
+    font-size: 16px; /* Font size for messages */
 }
 
 .confirmation-message {
-    border: 1px solid #d4edda;
-    background-color: #d4edda;
-    color: #155724;
+    border: 1px solid #d4edda; /* Light green border for confirmation */
+    background-color: #d4edda; /* Light green background for confirmation */
+    color: #155724; /* Dark green text color for confirmation */
 }
 
 .error-message {
-    border: 1px solid #f8d7da;
-    background-color: #f8d7da;
-    color: #721c24;
+    border: 1px solid #f8d7da; /* Light red border for errors */
+    background-color: #f8d7da; /* Light red background for errors */
+    color: #721c24; /* Dark red text color for errors */
+}
+
+/* Container for the navigation diamonds */
+.nav-container {
+    position: fixed; /* Fixed position */
+    top: 50%; /* Center vertically */
+    right: 20px; /* Position from the right edge */
+    transform: translateY(-50%); /* Adjust to center vertically */
+    z-index: 100; /* High z-index to stay on top */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack diamonds vertically */
+    align-items: center; /* Center diamonds horizontally */
+}
+
+/* General style for the navigation diamonds */
+.nav-diamond {
+    width: 20px; /* Default width */
+    height: 20px; /* Default height */
+    background-color: black; /* Fill color when not selected */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Diamond shape */
+    margin-bottom: 10px; /* Space between diamonds */
+    transition: all 0.3s ease; /* Smooth transition for changes */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: 2px solid black; /* Border color when not selected */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+/* Style for the selected diamond */
+.nav-diamond.active {
+    width: 30px; /* Increased width for selected diamond */
+    height: 30px; /* Increased height for selected diamond */
+    background-color: transparent; /* Make background transparent */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Square shape */
+    border: 2px solid black; /* Border color for square */
+    animation: transformSquare 0.3s ease; /* Animation for transforming to square */
+}
+
+/* Keyframes for transforming to square animation */
+@keyframes transformSquare {
+    0% {
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Diamond shape */
+        width: 20px; /* Initial width */
+        height: 20px; /* Initial height */
+    }
+    100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Square shape */
+        width: 30px; /* Final width */
+        height: 30px; /* Final height */
+    }
+}
+
+/* Optional: Add hover effect if desired */
+.nav-diamond:hover {
+    background-color: gray; /* Change color on hover */
 }
