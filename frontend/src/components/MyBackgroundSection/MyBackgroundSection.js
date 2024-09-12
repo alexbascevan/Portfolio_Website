@@ -1,6 +1,5 @@
-// src/components/MyBackgroundSection.js
 import React from 'react';
-import './MyBackgroundSection.css'; // Ensure this CSS file is created for styling
+import './MyBackgroundSection.css';
 
 const MyBackgroundSection = () => {
   return (

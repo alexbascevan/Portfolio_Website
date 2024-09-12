@@ -1,4 +1,4 @@
-/* Reset margins and global styles */
+/* Global Reset */
 body, html, h1, p, form, input, textarea, button {
   margin: 0;
   padding: 0;
@@ -6,25 +6,33 @@ body, html, h1, p, form, input, textarea, button {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Adjust margin for main content to make space for the fixed left nav */
+/* Adjust margin for main content to make space for the fixed left/right nav */
 main {
-  margin-left: 4rem; /* Adjust this value to create space for your left nav */
+  margin-left: 4rem; /* Adjust this value to create space for your nav */
   padding: 1rem; /* Optional: Add padding for better spacing */
 }
 
-/* Ensure scrolling behavior for snapping */
+/* Mobile adjustment for main content */
+@media (max-width: 768px) {
+  main {
+    margin-left: 0; /* Remove margin for smaller screens */
+    padding: 1rem; /* Ensure proper spacing */
+  }
+}
+
+/* Smooth Scrolling */
 html {
-  scroll-snap-type: y mandatory; /* Enable vertical scroll snapping */
-  scroll-behavior: smooth; /* Smooth scrolling */
-  height: 100%; /* Full height for proper scrolling */
-  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 body {
   margin: 0;
   line-height: 1.6;
   color: #ffffff; /* Dark purple text color */
-  background-color: #093257; 
+  background-color: #093257; /* Consistent with the rest of the theme */
 }
 
 /* Smooth scrolling for anchor links */

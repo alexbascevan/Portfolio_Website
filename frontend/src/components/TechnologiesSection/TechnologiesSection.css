@@ -1,65 +1,103 @@
 /* Ensure the section stacks content properly */
 .technologies {
-    padding: 2rem;
-    text-align: center; /* Center text in the section */
-    display: block; /* Ensure this section stacks elements */
-  }
-  
-  /* Ensure h2 is displayed as a block element and not aligned with the table */
+  padding: 2rem;
+  text-align: center; /* Center text in the section */
+  display: block; /* Ensure this section stacks elements */
+}
+
+/* Ensure h2 is displayed as a block element and not aligned with the table */
+.technologies h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 8rem 0 2rem 0; /* Space between h2 and the table */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Ensure the table is centered and structured properly */
+.technologies-table {
+  display: flex;
+  justify-content: center; /* Center columns horizontally */
+  max-width: 1000px;
+  margin: 0 auto; /* Center the table within the section */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+/* Define each column and its styling */
+.column {
+  text-align: left;
+  flex: 1;
+  padding: 1rem;
+  min-width: 200px; /* Ensure columns have a minimum width for better layout */
+  border-right: 1px solid #00f9e3; /* Horizontal line between columns */
+}
+
+/* Remove the border from the last column */
+.column:last-child {
+  border-right: none;
+}
+
+.column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #00f9e3; /* Neon turquoise for subheadings */
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column li {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center align icon and text */
+}
+
+.column li i {
+  margin-right: 0.5rem; /* Space between icon and text */
+  color: #00f9e3; /* Neon turquoise for icons */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .technologies h2 {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: 8rem 0 2rem 0; /* Space between h2 and the table */
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ffffff;
+      margin: 6rem 0 1.5rem; /* Adjust margin for smaller screens */
+      font-size: 1.75rem; /* Reduce font size */
   }
-  
-  /* Ensure the table is centered and structured properly */
+
   .technologies-table {
-    display: flex;
-    justify-content: center; /* Center columns horizontally */
-    max-width: 1000px;
-    margin: 0 auto; /* Center the table within the section */
-    flex-wrap: wrap; /* Allow wrapping if necessary */
+      max-width: 100%; /* Full width on smaller screens */
+      padding: 0 1rem; /* Add side padding */
   }
-  
-  /* Define each column and its styling */
+
   .column {
-    text-align: left;
-    flex: 1;
-    padding: 1rem;
-    min-width: 200px; /* Ensure columns have a minimum width for better layout */
-    border-right: 1px solid #00f9e3; /* Horizontal line between columns */
+      min-width: 150px; /* Adjust column width for smaller screens */
+      padding: 0.75rem; /* Reduce padding */
   }
-  
-  /* Remove the border from the last column */
-  .column:last-child {
-    border-right: none;
+}
+
+@media (max-width: 480px) {
+  .technologies h2 {
+      font-size: 1.5rem; /* Further reduce font size */
+      margin: 4rem 0 1rem; /* Adjust margin for mobile */
   }
-  
+
+  .column {
+      flex-basis: 100%; /* Stack columns on mobile */
+      border-right: none; /* Remove borders on mobile */
+      padding: 0.5rem; /* Smaller padding */
+  }
+
   .column h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #00f9e3; /* Neon turquoise for subheadings */
+      font-size: 1.25rem; /* Reduce subheading size */
   }
-  
-  .column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
+
   .column li {
-    font-size: 1.125rem;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-    display: flex; /* Align icon and text horizontally */
-    align-items: center; /* Center align icon and text */
+      font-size: 1rem; /* Reduce list item size */
   }
-  
-  .column li i {
-    margin-right: 0.5rem; /* Space between icon and text */
-    color: #00f9e3; /* Neon turquoise for icons */
-  }
-  
+}

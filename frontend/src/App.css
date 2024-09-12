@@ -19,13 +19,13 @@ html {
 body {
   margin: 0;
   line-height: 1.5;
-  background-color: #07203e; 
+  background-color: #07203e; /* Dark background color */
 }
 
 /* Container and section styles */
 .container, .section {
   max-width: 100%; /* Prevent content from exceeding viewport width */
-  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+  overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 /* Apply scroll snapping to sections */
@@ -35,7 +35,7 @@ body {
 
 /* Handle specific scrollable elements */
 .scrollable-element {
-  overflow-x: auto; /* Allow horizontal scroll if necessary */
+  overflow-x: hidden; /* Hide horizontal scroll if not needed */
   max-width: 100%; /* Prevent exceeding viewport width */
 }
 
@@ -49,4 +49,56 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); /* Responsive grid */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .intro-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .intro-image-wrapper {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .intro-image {
+    width: 80vw;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hi {
+    font-size: 1.5rem;
+  }
+
+  .name {
+    font-size: 4rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .summary {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .contact-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './RightLinkBar.css'; // Create this CSS file for styling
+import './RightLinkBar.css';
 
 const RightLinkBar = () => {
   return (

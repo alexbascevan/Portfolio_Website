@@ -1,9 +1,23 @@
-/* Footer styling */
+/* Footer Styling */
 footer {
     text-align: center;
     color: #EBD3F8; /* Light purple text color */
     padding: 1rem 0;
     width: 100%;
     bottom: 0;
-    position: relative; 
+    position: relative;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    footer {
+        padding: 0.75rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 0.5rem 0;
+        font-size: 0.875rem;
+    }
 }

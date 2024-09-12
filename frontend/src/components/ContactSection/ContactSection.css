@@ -1,129 +1,186 @@
-h1{
-    text-align: center; /* Center align heading */
+/* General Styles */
+h1 {
+    text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 3rem;
     color: #00f9e3;
-    margin: 0; /* Remove default margin */
-    margin-bottom: 1rem; /* Space below title */
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
-p{
-    text-align: center; /* Center align heading */
+p {
+    text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 1.25rem;
     color: #ffffff;
-    margin: 0; /* Remove default margin */
-    margin-bottom: 1rem; /* Space below title */
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 .connectInvite {
-    text-align: center; /* Center align paragraph text */
-    margin-bottom: 1rem; /* Space below paragraph */
+    text-align: center;
+    margin-bottom: 1rem;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 2rem;
 }
 
 .linkedin-link {
-    display: inline-flex; /* Align icon and text */
-    align-items: center; /* Center items vertically */
-    text-decoration: none; /* Remove underline */
-    color: #fff; /* White text color */
-    font-size: 1.125rem; /* Font size */
-    padding: 0.5rem 1rem; /* Padding around text */
-    border-radius: 0.25rem; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-    margin-top: 1rem; /* Space above link */
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
 }
 
 .linkedin-link:hover {
-    background-color: #444; /* Darker background on hover */
+    background-color: #444;
 }
 
 .linkedin-link i {
-    font-size: 1.5rem; /* Adjust size of the icon */
-    margin-right: 0.5rem; /* Space between icon and text */
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
 }
 
-
-/* Form styling */
+/* Form Styling */
 form {
-    background: #fff; /* White background for form */
-    padding: 2rem; /* Padding inside form */
-    border-radius: 0.5rem; /* Rounded corners */
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Shadow around form */
-    max-width: 90%; /* Responsive width */
-    margin: 0 auto; /* Center the form horizontally */
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .form-group {
-    margin-bottom: 1rem; /* Space between form groups */
+    margin-bottom: 1rem;
 }
 
 .form-group label {
     display: block;
     font-weight: bold;
-    margin-bottom: 0.5rem; /* Space below label */
-    color: #000000; /* Dark purple color for labels */
+    margin-bottom: 0.5rem;
+    color: #000000;
 }
 
 .form-group input, .form-group textarea {
     width: 100%;
-    padding: 0.625rem; /* Padding inside inputs/textarea */
-    border: 1px solid #000000; /* Dark purple border */
-    border-radius: 0.25rem; /* Rounded corners */
+    padding: 0.625rem;
+    border: 1px solid #000000;
+    border-radius: 0.25rem;
     box-sizing: border-box;
 }
 
 .form-group textarea {
-    height: auto; /* Auto height to adjust with content */
-    resize: vertical; /* Allow vertical resizing */
+    height: auto;
+    resize: vertical;
 }
 
-/* Button styling */
+/* Button Styling */
 button {
-    background-color: #000000; /* Vibrant purple background */
-    color: #fff; /* White text color */
+    background-color: #000000;
+    color: #fff;
     border: none;
-    padding: 0.625rem 1.25rem; /* Padding inside button */
-    border-radius: 0.25rem; /* Rounded corners */
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.25rem;
     cursor: pointer;
-    font-size: 1rem; /* Font size */
-    margin-top: 1rem; /* Space above button */
+    font-size: 1rem;
+    margin-top: 1rem;
 }
 
 button:hover {
-    background-color: #4c4a4e; 
+    background-color: #4c4a4e;
 }
 
-/* Confirmation and error messages */
+/* Confirmation and Error Messages */
 .confirmation-message, .error-message {
     display: block;
-    padding: 0.625rem; /* Padding inside messages */
-    border-radius: 0.3125rem; /* Rounded corners */
-    margin-top: 0.625rem; /* Space above messages */
-    font-size: 1rem; /* Font size */
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    margin-top: 0.625rem;
+    font-size: 1rem;
 }
 
 .confirmation-message {
-    border: 2px solid #00e676; /* Bright green border for a fresh look */
-    background-color: #d4edda; /* Soft green background */
-    color: #155724; /* Dark green text for better readability */
-    padding: 1rem; /* Add some padding for spacing */
-    border-radius: 0.5rem; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    font-family: "Roboto", sans-serif; /* Consistent font */
-    text-align: center; /* Center text alignment */
-    max-width: 400px; /* Maximum width for better control */
-    margin: 1rem auto; /* Center alignment with margin */
+    border: 2px solid #00e676;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    max-width: 400px;
+    margin: 1rem auto;
 }
-
 
 .error-message {
-    border: 1px solid #F8D7DA; /* Light red border for errors */
-    background-color: #F8D7DA; /* Light red background */
-    color: #721C24; /* Dark red text color */
+    border: 1px solid #F8D7DA;
+    background-color: #F8D7DA;
+    color: #721C24;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p, .connectInvite {
+        font-size: 1rem;
+    }
+
+    .linkedin-link {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .confirmation-message, .error-message {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p, .connectInvite {
+        font-size: 0.875rem;
+    }
+
+    .linkedin-link {
+        font-size: 0.875rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    form {
+        padding: 0.5rem;
+    }
+
+    button {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+
+    .confirmation-message, .error-message {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+    }
+}

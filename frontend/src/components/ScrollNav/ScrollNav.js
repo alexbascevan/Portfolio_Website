@@ -1,4 +1,3 @@
-// src/components/ScrollNav/ScrollNav.js
 import React, { useEffect } from 'react';
 import './ScrollNav.css';
 

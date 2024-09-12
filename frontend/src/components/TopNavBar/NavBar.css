@@ -1,3 +1,4 @@
+/* Navbar container */
 .navbar {
   display: flex;
   justify-content: flex-end; /* Align buttons to the right */
@@ -8,6 +9,53 @@
   right: 1rem; /* Space from the right */
   border-radius: 0.5rem; /* Rounded corners */
   z-index: 1000; /* Ensure it stays above other content */
+  background-color: #093257; /* Background color to match theme */
+}
+
+.hamburger-menu {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: #ffffff; /* White bars */
+  margin: 0.2rem 0;
+  transition: 0.3s;
+}
+
+.hamburger-menu .bar.open {
+  transform: rotate(45deg);
+}
+
+.hamburger-menu .bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu .bar.open:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 3rem; /* Adjust based on the hamburger menu position */
+  right: 0;
+  background-color: #093257;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 .nav-button {
@@ -19,13 +67,20 @@
   font-family: "Roboto", sans-serif; /* Consistent font */
   cursor: pointer; /* Pointer cursor on hover */
   transition: border 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
-  margin-left: 0.5rem; /* Space between buttons */
+  margin-bottom: 0.5rem; /* Space between buttons */
 }
 
 .nav-button:hover {
   border: 2px solid #00f9e3; /* Neon turquoise border on hover */
   background-color: #093257; /* Darker background color on hover */
   color: #fff; /* White text color on hover */
+}
+
+/* Active state for nav buttons */
+.nav-button.active {
+  border: 2px solid #00f9e3; /* Consistent turquoise border for active state */
+  background-color: #093257; /* Darker background for active button */
+  color: #00f9e3; /* Turquoise text to indicate the active state */
 }
 
 .resume-button {
@@ -36,7 +91,6 @@
   font-size: 0.9rem; /* Slightly smaller font size */
   font-family: "Roboto", sans-serif; /* Consistent font */
   cursor: pointer; /* Pointer cursor on hover */
-  margin-left: 0.5rem; /* Space between buttons */
   border-radius: 0.5rem;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
   text-decoration: none;
@@ -45,4 +99,24 @@
 .resume-button:hover {
   background-color: #093257; /* Darker background color on hover */
   color: #093257; /* Darker text color on hover */
+}
+
+/* Responsive Design: Navbar for smaller screens */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex; /* Show hamburger menu on small screens */
+  }
+
+  .nav-links {
+    display: none; /* Hide nav links by default on small screens */
+  }
+
+  .nav-links.open {
+    display: flex; /* Show nav links when menu is open */
+  }
+
+  .nav-button, .resume-button {
+    padding: 0.4rem 0.5rem; /* Slightly smaller padding for mobile */
+    font-size: 0.8rem; /* Slightly smaller font size */
+  }
 }

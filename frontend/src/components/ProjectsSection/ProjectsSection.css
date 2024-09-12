@@ -1,50 +1,50 @@
-/* Projects section */
+/* Projects Section */
 .projects {
     color: #ffffff;
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    padding: 6rem; /* Dynamic padding */
-    box-sizing: border-box; /* Ensure padding is included in width */
-    background-color: #07203e; /* Background color */
-    overflow: hidden; /* Prevent overflow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+    box-sizing: border-box;
+    background-color: #07203e;
+    overflow: hidden;
 }
 
 h1 {
-    text-align: center; /* Center align heading */
+    text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 3rem;
     color: #00f9e3;
-    margin: 0; /* Remove default margin */
-    margin-bottom: 2rem; /* Space below title */
+    margin: 0;
+    margin-bottom: 2rem;
 }
 
-/* Projects grid */
+/* Projects Grid */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem; /* Space between grid items */
-    width: 100%; /* Ensure grid takes full width */
-    max-width: calc(100% - 2rem); /* Prevent overflow by subtracting padding */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-    margin: 0 auto; /* Center the grid horizontally */
+    gap: 2rem;
+    width: 100%;
+    max-width: calc(100% - 2rem);
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
-/* Project card styling */
+/* Project Card Styling */
 .project-card {
-    background-color: #fff; /* White background for project cards */
-    border-radius: 0.5rem; /* Rounded corners */
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    color: #000; /* Dark text color for better readability */
-    text-align: center; /* Center text inside card */
+    color: #000;
+    text-align: center;
 }
 
 .project-card img {
-    width: 100%; /* Ensure image takes full width of card */
-    height: 200px; /* Fixed height for images */
-    object-fit: cover; /* Cover image to fill the container */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .project-title {
@@ -55,5 +55,64 @@ h1 {
 .project-blurb {
     margin: 0 1rem 1rem;
     font-size: 1rem;
-    color: #333; /* Darker text color for blurb */
+    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+
+    .project-card img {
+        height: 180px; /* Adjust image height for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        padding: 4rem 2rem; /* Adjust padding for tablets and small screens */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Reduce title size for smaller screens */
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column on smaller devices */
+    }
+
+    .project-card img {
+        height: 160px; /* Further adjust image height for smaller screens */
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .project-blurb {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        padding: 3rem 1rem; /* Further reduce padding for mobile */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller title on mobile */
+    }
+
+    .project-card img {
+        height: 140px; /* Reduce image height for mobile */
+    }
+
+    .project-title {
+        font-size: 1rem;
+    }
+
+    .project-blurb {
+        font-size: 0.875rem; /* Smaller blurb text on mobile */
+    }
 }

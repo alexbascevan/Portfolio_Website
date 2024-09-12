@@ -1,118 +1,149 @@
-/* General section styling */
-section {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    scroll-snap-align: start; /* Snap each section to the start */
-    color: #fff; /* White text color for sections */
-    padding: 3rem;
-    padding-left: 3rem;
-}
-
-/* Introduction section */
-
-.hi{
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 2rem;
-    color: #00f9e3;
-}
-
-.name {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 6rem;
-    margin: 0; /* Remove default margin */
-    margin-bottom: 1rem; /* Space below name */
-}
-
-.title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 3rem;
-    color: #6f7788;
-    margin: 0; /* Remove default margin */
-    margin-bottom: 1rem; /* Space below title */
-}
-
-.summary {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    margin: 0; /* Remove default margin */
-    font-size: 1.2rem; /* Adjust font size as needed */
-    line-height: 1.5; /* Improve readability */
-    max-width: 100%; /* Ensure it doesn’t exceed container width */
-}
-
-/* Introduction container */
-.intro {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    padding: 2rem; /* Dynamic padding */
-    box-sizing: border-box; /* Ensure padding is included in width */
-    /* text-align: center; Center align text in smaller viewports */
-}
-
-/* Content section */
-.intro-content {
-    width: 70%; /* Take up 70% of the width */
-    max-width: calc(100% - 15rem); /* Adjust based on the image size and margin */
-    padding-right: 2rem; /* Space between text and image */
-}
-
-/* Image wrapper */
-.intro-image-wrapper {
-    width: 30%; /* Take up 30% of the width */
-    display: flex; /* Use flexbox to center the image */
-    justify-content: center; /* Center the image horizontally */
-}
-
-.intro-image {
-    width: 100%; /* Make image fit its container */
-    max-width: 25rem; /* Maximum width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover the image area while maintaining aspect ratio */
-    border-radius: 0.5rem; /* Dynamic border radius */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .intro {
-        flex-direction: column; /* Stack text and image vertically */
-        align-items: center;
-        text-align: center; /* Center align text */
-    }
-
-    .intro-content {
-        width: 100%; /* Full width for smaller screens */
-        padding: 0; /* Remove padding for mobile view */
-    }
-
-    .intro-image-wrapper {
-        width: 100%; /* Full width for image wrapper */
-        margin-top: 1rem; /* Space between text and image */
-    }
-
-    .intro-image {
-        width: 80vw; /* Adjusted responsive width */
-        max-width: 150px; /* Smaller maximum width */
-    }
-}
-
-/* IntroSection.css */
-.contact-button {
-    background: none; /* No background color */
-    border: 2px solid #00f9e3; /* Neon turquoise border */
-    color: #00f9e3; /* Neon turquoise text */
-    padding: 0.75rem 1.5rem; /* Adjust padding */
-    font-size: 1rem; /* Adjust font size */
-    font-family: "Roboto", sans-serif; /* Consistent font */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-
-}
-
-.contact-button:hover {
-    background-color: #00f9e3; /* Neon turquoise background on hover */
-    color: #093257; /* Darker text color on hover */
-}
+/* Define CSS variables for consistent styling */
+:root {
+    --primary-color: #00f9e3;
+    --secondary-color: #093257;
+    --text-color-light: #ffffff;
+    --text-color-dark: #333333;
+    --padding-large: 3rem;
+    --padding-medium: 2rem;
+    --padding-small: 1rem;
+    --font-family: "Roboto", sans-serif;
+  }
+  
+  /* General Section Styling */
+  section {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      scroll-snap-align: start;
+      color: var(--text-color-light);
+      padding: var(--padding-large);
+      padding-left: var(--padding-large);
+      box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  /* Introduction Section */
+  .intro-section {
+      display: flex;
+      align-items: center;
+      padding: var(--padding-medium);
+      box-sizing: border-box;
+  }
+  
+  .hi {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 2rem;
+      color: var(--primary-color);
+  }
+  
+  .name {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 6rem;
+      margin: 0;
+      margin-bottom: 1rem;
+  }
+  
+  .title {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 3rem;
+      color: #6f7788;
+      margin: 0;
+      margin-bottom: 1rem;
+  }
+  
+  .summary {
+      font-family: var(--font-family);
+      font-weight: 300;
+      margin: 0;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      max-width: 100%;
+  }
+  
+  /* Image Wrapper */
+  .intro-image-wrapper {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .intro-image {
+      width: 100%;
+      max-width: 25rem;
+      height: auto;
+      object-fit: cover;
+      border-radius: 0.5rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+      section {
+          padding: var(--padding-medium);
+      }
+  
+      .intro-section {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+  
+      .intro-content {
+          width: 100%;
+          padding: 0;
+      }
+  
+      .intro-image-wrapper {
+          width: 100%;
+          margin-top: 1rem;
+      }
+  
+      .intro-image {
+          width: 80vw;
+          max-width: 150px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .hi {
+          font-size: 1.5rem;
+      }
+  
+      .name {
+          font-size: 4rem;
+      }
+  
+      .title {
+          font-size: 2rem;
+      }
+  
+      .summary {
+          font-size: 1rem;
+          line-height: 1.4;
+      }
+  
+      .contact-button {
+          padding: 0.5rem 1rem;
+          font-size: 0.875rem;
+      }
+  }
+  
+  /* Contact Button Styling */
+  .contact-button {
+      background: none;
+      border: 2px solid var(--primary-color);
+      color: var(--primary-color);
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-family: var(--font-family);
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+  
+  .contact-button:hover {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+  }
+  

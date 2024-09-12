@@ -1,18 +1,63 @@
-/* My Background section */
+/* My Background Section */
 .myBackground {
-    color: #ffffff; 
+    color: #ffffff;
     padding: 2rem;
     text-align: center;
 }
 
+/* Main Heading */
 .myBackground h1 {
     margin-bottom: 1rem; /* Space below the main heading */
+    font-size: 3rem; /* Adjust font size for desktop */
 }
 
+/* Subheading */
 .myBackground h2 {
     margin: 1rem 0; /* Space around subheadings */
+    font-size: 2rem; /* Adjust font size for desktop */
 }
 
+/* Paragraph */
 .myBackground p {
     margin: 1rem 0; /* Space around paragraph */
+    font-size: 1.25rem; /* Adjust font size for desktop */
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .myBackground {
+        padding: 1.5rem; /* Reduce padding on smaller screens */
+    }
+
+    .myBackground h1 {
+        font-size: 2.5rem; /* Adjust font size for tablet */
+    }
+
+    .myBackground h2 {
+        font-size: 1.75rem; /* Adjust font size for tablet */
+    }
+
+    .myBackground p {
+        font-size: 1.125rem; /* Adjust font size for tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .myBackground {
+        padding: 1rem; /* Reduce padding further for mobile */
+    }
+
+    .myBackground h1 {
+        font-size: 2rem; /* Adjust font size for mobile */
+    }
+
+    .myBackground h2 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .myBackground p {
+        font-size: 1rem; /* Adjust font size for mobile */
+        line-height: 1.4; /* Improve readability on smaller screens */
+    }
 }

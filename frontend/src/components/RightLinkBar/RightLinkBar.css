@@ -1,24 +1,59 @@
+/* Right Link Bar */
 .right-link-bar {
-    position: fixed; /* Fixed positioning */
-    top: 10%; /* Space from the top */
-    right: 0; /* Align to the right */
-    display: flex; /* Flex container */
-    flex-direction: column; /* Vertical alignment */
-    align-items: center; /* Center items horizontally */
-    z-index: 1000; /* Ensure it stays above other content */
-    padding-right: 2.5rem;
+  position: fixed; /* Fixed positioning */
+  top: 10%; /* Space from the top */
+  right: 0; /* Align to the right */
+  display: flex; /* Flex container */
+  flex-direction: column; /* Vertical alignment */
+  align-items: center; /* Center items horizontally */
+  z-index: 1000; /* Ensure it stays above other content */
+  padding-right: 2.5rem;
+}
+
+/* Icon Styling */
+.link-icon {
+  display: block; /* Block display for spacing */
+  color: #ffffff; /* White color for icons */
+  font-size: 1.5rem; /* Font size of icons */
+  margin: 0.5rem 0; /* Space between icons */
+  transition: color 0.3s ease; /* Smooth transition for hover effects */
+  text-decoration: none; /* Remove underline */
+}
+
+.link-icon:hover {
+  color: #00f9e3; /* Neon turquoise color on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .right-link-bar {
+      padding-right: 2rem; /* Reduce padding for tablets */
   }
-  
+
   .link-icon {
-    display: block; /* Block display for spacing */
-    color: #ffffff; /* White color for icons */
-    font-size: 1.5rem; /* Font size of icons */
-    margin: 0.5rem 0; /* Space between icons */
-    transition: color 0.3s ease; /* Smooth transition for hover effects */
-    text-decoration: none; /* Remove underline */
+      font-size: 1.3rem; /* Reduce icon size for tablets */
   }
-  
-  .link-icon:hover {
-    color: #00f9e3; /* Neon turquoise color on hover */
+}
+
+@media (max-width: 768px) {
+  .right-link-bar {
+      top: 5%; /* Move bar slightly lower for smaller screens */
+      padding-right: 1.5rem; /* Further reduce padding */
   }
-  
+
+  .link-icon {
+      font-size: 1.2rem; /* Further reduce icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .right-link-bar {
+      top: 3%; /* Adjust positioning on mobile */
+      padding-right: 1rem; /* Reduce padding for mobile */
+  }
+
+  .link-icon {
+      font-size: 1rem; /* Smaller icons for mobile */
+      margin: 0.4rem 0; /* Adjust space between icons */
+  }
+}
